@@ -5,7 +5,7 @@ import time
 # Physical Ports from Raspiberry
 LEFT_MOTOR = {'pin_1': 8, 'pin_2': 10}
 RIGHT_MOTOR = {'pin_1': 26, 'pin_2': 24}
-SENSOR = {'TRIGGER': 5, 'ECHO': 7}
+SENSOR = {'TRIGGER': 13, 'ECHO': 11}
 
 # Minimun distance in centimeters
 MINIMUN_DISTANCE = 10.0
