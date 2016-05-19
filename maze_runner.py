@@ -10,12 +10,6 @@ SENSOR = {'TRIGGER': 13, 'ECHO': 11}
 # Minimun distance in centimeters
 MINIMUN_DISTANCE = 10.0
 
-PATH_CHOICES = [
-    [turn_left],
-    [turn_right, turn_right],
-    [turn_right],
-]
-
 
 def setup_motors():
     GPIO.setmode(GPIO.BOARD)
@@ -124,6 +118,12 @@ def run():
 
                 if can_i_move_foward():
                     break
+
+PATH_CHOICES = [
+    [turn_left],
+    [turn_right, turn_right],
+    [turn_right],
+]
 
 if __name__ == '__main__':
     try:
